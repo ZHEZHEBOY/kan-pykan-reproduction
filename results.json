@@ -1,0 +1,55 @@
+[
+  {
+    "model": "Official-pykan-KAN-width-[2, 5, 1]-grid-5-k-3",
+    "optimizer": "LBFGS",
+    "params": 42,
+    "best_train_rmse": 0.0009455270483158529,
+    "best_test_rmse": 0.0008950419723987579,
+    "seconds": 177.74118060001638,
+    "details": {
+      "implementation": "pykan",
+      "initial_params": 210,
+      "pruned_params": 42,
+      "width": [
+        2,
+        5,
+        1
+      ],
+      "grid": 5,
+      "spline_order": 3,
+      "lamb": 0.01,
+      "lamb_entropy": 10.0,
+      "steps": 20,
+      "prune_steps": 50,
+      "symbolic_steps": 50,
+      "post_prune_lamb": 0.0,
+      "symbolic": {
+        "attempted": true,
+        "formula": "0.996658334134605*exp(1.00129391169707*(y - 7.42700988163218e-5)**2 + 1.00191039902552*sin(3.14153575897217*x + 1.09131924546091e-5)) + 0.00379010383039713",
+        "error": null
+      }
+    }
+  },
+  {
+    "model": "MLP-16-hidden",
+    "optimizer": "AdamW",
+    "params": 337,
+    "best_train_rmse": 0.015025951899588108,
+    "best_test_rmse": 0.015269709751009941,
+    "seconds": 15.21432620001724,
+    "details": {
+      "implementation": "torch.nn.MLP"
+    }
+  },
+  {
+    "model": "MLP-24-hidden",
+    "optimizer": "AdamW",
+    "params": 697,
+    "best_train_rmse": 0.00921223871409893,
+    "best_test_rmse": 0.009043936617672443,
+    "seconds": 14.937479899963364,
+    "details": {
+      "implementation": "torch.nn.MLP"
+    }
+  }
+]

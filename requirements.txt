@@ -1,0 +1,3 @@
+torch>=2.0
+pykan==0.2.8
+sympy>=1.12

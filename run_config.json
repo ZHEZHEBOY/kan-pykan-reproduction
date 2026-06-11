@@ -1,0 +1,27 @@
+{
+  "paper_function": "f(x,y)=exp(sin(pi*x)+y^2), x,y in [-1,1]",
+  "paper_code_path": "official pykan / Hello KAN example",
+  "seed": 2026,
+  "n_train": 1000,
+  "n_test": 2000,
+  "width": [
+    2,
+    5,
+    1
+  ],
+  "grid": 5,
+  "spline_order": 3,
+  "kan_steps": 20,
+  "prune_steps": 50,
+  "symbolic_steps": 50,
+  "lamb": 0.01,
+  "lamb_entropy": 10.0,
+  "mlp_epochs": 2500,
+  "mlp_lr": 0.01,
+  "requested_device": "auto",
+  "resolved_device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "torch_version": "2.7.1+cu118",
+  "torch_threads": null,
+  "best_model": "Official-pykan-KAN-width-[2, 5, 1]-grid-5-k-3"
+}

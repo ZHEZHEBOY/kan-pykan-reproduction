@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+smoke_test/
+pykan_checkpoints/
+.idea/
