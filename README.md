@@ -10,6 +10,12 @@ Ziming Liu, Yixuan Wang, Sachin Vaidya, Fabian Ruehle, James Halverson, Marin So
 
 官方代码库：`KindXiaoming/pykan`。
 
+论文链接与版权说明：
+
+- arXiv 页面：https://arxiv.org/abs/2404.19756
+- ICLR/OpenReview 页面：https://openreview.net/forum?id=Ozo7qJ5vZi
+- OpenReview 页面标注该论文为 `CC BY 4.0`。本仓库保留论文 PDF 仅作为课程复现配套材料；如果公开仓库对版权合规有更高要求，可删除 PDF，仅保留上述官方链接。
+
 ## 2. 复现实验范围
 
 代码复现官方 `pykan` 文档中的函数拟合示例：
