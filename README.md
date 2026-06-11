@@ -123,39 +123,9 @@ exp(y^2 + sin(pi*x))
 | `MLP` / `train_mlp` | 对比基线模型和训练 |
 | `write_outputs` | 输出 CSV、JSON、配置和预测样例 |
 
-## 8. GitHub 上传建议
+## 8. 代码规范说明
 
-建议上传以下文件：
-
-```text
-复现代码/
-├── README.md
-├── requirements.txt
-├── kan_reproduction.py
-├── KAN_Kolmogorov-Arnold_Networks_2024.pdf
-├── kan_paper_toy_dataset.csv
-├── results.csv
-├── results.json
-├── run_config.json
-├── prediction_samples.csv
-└── .gitignore
-```
-
-其中 `README.md`、`requirements.txt`、`kan_reproduction.py` 是最核心文件；数据集、结果文件和配置文件用于保留课程报告对应的实验记录，建议一并上传。
-
-原论文 PDF 已放在本目录中，可与代码一并上传作为配套阅读材料。如果仓库公开发布，也可以只在 README 中保留 arXiv/ICLR 链接，避免不必要的版权问题。
-
-不建议上传以下文件：
-
-- `__pycache__/`
-- `*.pyc`
-- `pykan_checkpoints/`
-- `.idea/`
-- 临时测试目录，如 `smoke_test/`
-- Word 临时锁文件，如 `~$*.docx`
-- 中间渲染图、临时脚本和个人机器路径相关文件
-
-代码规范方面，本脚本尽量满足以下要求：
+本脚本尽量满足以下要求：
 
 - 使用相对路径和 `--output-dir` 参数，避免本机绝对路径。
 - 固定随机种子，并保存 `run_config.json`，便于复现实验。
